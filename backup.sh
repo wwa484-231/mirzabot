@@ -2,6 +2,8 @@
 
 set -Eeuo pipefail
 
+export TZ=Asia/Tehran
+
 DATE="$(date '+%Y-%m-%d_%H-%M-%S')"
 FILE="/tmp/mirzabot_${DATE}.sql"
 ARCHIVE="/tmp/mirzabot_${DATE}.sql.gz"
