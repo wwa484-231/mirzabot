@@ -28,7 +28,7 @@ if [ ! -s "${ARCHIVE}" ]; then
 fi
 
 curl --fail --silent --show-error \
-  -F "chat_id=${BACKUP_CHAT_ID}" \
+  -F "chat_id=${BACKUP_CHAT_IDS}" \
   -F "document=@${ARCHIVE}" \
   -F "caption=MirzaBot backup - ${DATE}" \
   "https://api.telegram.org/bot${BACKUP_BOT_TOKEN}/sendDocument"
